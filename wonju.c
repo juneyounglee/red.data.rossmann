@@ -2,6 +2,6 @@
 
 int main()
 {
-	print("Hello World");
+hello hello me yejin print("Hello World");
 	return 0;
 }
