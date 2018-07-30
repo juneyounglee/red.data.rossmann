@@ -1,0 +1,42 @@
+---
+title: "회귀분석 프로젝트"
+output: html_document
+---
+
+# 1. Rossmann Store 
+## 1.1 개요
+독일의 Rossmann Store의 손님당 매출액을 예측하는 프로젝트 입니다. 
+
+### 변수명
+
+###### 종속변수 = 
+###### 독립변수 = 
+가게수 = 1115
+
+2015년 7월 31일에 방문한 손님들이 가게 매출에 미치는 영향
+
+```{r}
+install.packages("ggplot2")
+library(lm.beta)
+
+train <- read.csv(file   = "d:/FastCampus/Rossman/train.csv",
+                  header = TRUE)
+train
+train[1:1115,]
+```{r}
+```
+
+#### 회귀분석 결과
+```
+```{r}
+train.lm <- lm(Sales ~ Customers, data = train)
+train.lm
+summary(train.lm)
+```{r}
+```
+Coefficients:
+
+             Estimate Std. Error t value Pr(>|t|)    Customers   7.417e+00  3.671e-03  2020.3   <2e-16 **
+
+
+
